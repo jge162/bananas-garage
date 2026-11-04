@@ -2,7 +2,7 @@
 
 DIY site for **Banana**, a 1979 GMC Sierra Grande in two-tone pale yellow and cream. The truck belongs to a squarebody enthusiast, electrical engineer, and family man. Day-to-day photos live on Instagram at [@79_sierragrande](https://www.instagram.com/79_sierragrande/).
 
-The site is plain static HTML, CSS, and a little vanilla JavaScript. There is no build step. Vercel can serve the repository root as-is.
+The site is plain static HTML, CSS, and a little vanilla JavaScript. There is no build step. Vercel can serve the repository root as-is. The layout follows the same clean system as [Gadget Drop Picks](https://gadget-drop-picks.vercel.app): Outfit and Fraunces, a light background, simple cards, and a dark header. Photos of the truck carry the pages.
 
 - **Domain:** https://bananasgarage.com
 - **Email:** [bananasgarage79@gmail.com](mailto:bananasgarage79@gmail.com)
@@ -12,17 +12,27 @@ The site is plain static HTML, CSS, and a little vanilla JavaScript. There is no
 
 | URL | File | What it is |
 | --- | --- | --- |
-| `/` | `index.html` | Hero, short intro, featured jobs, a few Instagram embeds |
-| `/builds` | `builds.html` | One card per DIY job, plus the Instagram gallery |
-| `/about` | `about.html` | Banana, and the owner |
+| `/` | `index.html` | Full-bleed front photo, Meet Banana, photo strip, latest Instagram links |
+| `/builds` | `builds.html` | The six jobs, plus a link card for every Instagram post |
+| `/about` | `about.html` | Banana and the owner, with the side photo |
 | `/parts` | `parts.html` | Parts and tools, coming soon, with an affiliate disclosure |
-| `/contact` | `contact.html` | Email and Instagram |
+| `/contact` | `contact.html` | Email and Instagram, with the sunset badge photo |
 
 `vercel.json` sets `cleanUrls: true`, so `/builds` serves `builds.html`.
 
-Instagram posts use the official embed (`blockquote.instagram-media` with `data-instgrm-permalink`, plus `https://www.instagram.com/embed.js`). That script is loaded only on the home page and the builds page. The gallery is one group of posts, not one clip assigned to each job. Project cards link to the Instagram profile.
+Instagram is linked, not embedded. Each card has a Reel or Post tag and a "View on Instagram" link that opens the permalink in a new tab.
 
-The hero illustration is an original SVG. It is not a photo, and it does not use GMC or Chevy logos.
+## Photos
+
+Optimized files live in `img/` as JPG and WebP at about 900px wide, plus a larger width when the original is bigger:
+
+- `truck-front-900` and `truck-front-1223` (the camera original is 1223px wide)
+- `truck-side-900` and `truck-side-1800`
+- `truck-badge-900` and `truck-badge-1206`
+
+Use `<picture>` with a WebP `source` and a JPG `img`, plus `srcset` and `sizes`. The home hero is preloaded. Other photos use `loading="lazy"`.
+
+To add a photo later, export `img/<name>-900.jpg` and `img/<name>-900.webp` (and a larger pair if you have the pixels), then copy a `<figure>` in the home photo strip. Do not add an `<img>` until those files exist, so the page never shows a broken image.
 
 ## Preview locally
 

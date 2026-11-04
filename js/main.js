@@ -1,39 +1,54 @@
 (function () {
   var header = document.querySelector(".site-header");
-  var button = document.querySelector(".nav-toggle");
+  var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
-  if (!header || !button || !nav) return;
+  var scrim = document.querySelector(".nav-scrim");
+  if (!header || !toggle || !nav) return;
 
-  var label = button.querySelector(".nav-toggle-label");
-
-  function setHeaderHeight() {
-    document.documentElement.style.setProperty("--header-h", header.offsetHeight + "px");
-  }
+  var desktop = window.matchMedia("(min-width: 880px)");
 
   function setOpen(open) {
-    document.body.classList.toggle("nav-open", open);
-    button.setAttribute("aria-expanded", open ? "true" : "false");
-    if (label) label.textContent = open ? "Close" : "Menu";
+    if (desktop.matches) open = false;
+    header.classList.toggle("is-open", open);
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    if (scrim) {
+      if (open) scrim.removeAttribute("hidden");
+      else scrim.setAttribute("hidden", "");
+    }
   }
 
-  setHeaderHeight();
-  window.addEventListener("resize", function () {
-    setHeaderHeight();
-    if (window.matchMedia("(min-width: 840px)").matches) setOpen(false);
-  });
-  if (document.fonts && document.fonts.ready) {
-    document.fonts.ready.then(setHeaderHeight);
-  }
-
-  button.addEventListener("click", function () {
-    setOpen(button.getAttribute("aria-expanded") !== "true");
+  toggle.addEventListener("click", function () {
+    setOpen(toggle.getAttribute("aria-expanded") !== "true");
   });
 
   nav.addEventListener("click", function (event) {
     if (event.target.closest("a")) setOpen(false);
   });
 
+  if (scrim) {
+    scrim.addEventListener("click", function () {
+      setOpen(false);
+      toggle.focus();
+    });
+  }
+
   document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") setOpen(false);
+    if (event.key === "Escape" && header.classList.contains("is-open")) {
+      setOpen(false);
+      toggle.focus();
+    }
   });
+
+  document.addEventListener("click", function (event) {
+    if (!header.classList.contains("is-open")) return;
+    if (header.contains(event.target) || (scrim && scrim.contains(event.target))) return;
+    setOpen(false);
+  });
+
+  function onDesktopChange() {
+    if (desktop.matches) setOpen(false);
+  }
+  if (desktop.addEventListener) desktop.addEventListener("change", onDesktopChange);
+  else if (desktop.addListener) desktop.addListener(onDesktopChange);
 })();

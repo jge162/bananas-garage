@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact | Banana's Garage</title>
   <meta name="description" content="Email Banana's Garage at bananasgarage79@gmail.com, or follow the truck on Instagram @79_sierragrande.">
-  <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#24140e">
+  <meta name="theme-color" content="#14110e">
   <link rel="canonical" href="https://bananasgarage.com/contact">
   <meta property="og:site_name" content="Banana's Garage">
   <meta property="og:type" content="website">
@@ -16,39 +15,25 @@
   <meta property="og:image" content="https://bananasgarage.com/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Banana's Garage, with a pale yellow squarebody pickup illustration">
+  <meta property="og:image:alt" content="Head-on photo of Banana, a pale yellow 1979 squarebody, on a sunny street.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Contact | Banana's Garage">
-  <meta name="twitter:description" content="Email bananasgarage79@gmail.com or find @79_sierragrande on Instagram.">
+  <meta name="twitter:description" content="Email bananasgarage79@gmail.com or follow @79_sierragrande on Instagram.">
   <meta name="twitter:image" content="https://bananasgarage.com/og.png">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/outfit.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="img/truck-badge-900.webp" imagesrcset="img/truck-badge-900.webp 900w, img/truck-badge-1206.webp 1206w" imagesizes="100vw" type="image/webp">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip" href="#content">Skip to content</a>
   <header class="site-header">
-    <div class="pinstripe" aria-hidden="true"></div>
-    <div class="header-bar">
-      <a class="logo" href="index.html">
-        <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
-          <rect x="1.5" y="1.5" width="45" height="45" rx="12" fill="#F0CC4A"/>
-          <path fill="#2A1810" d="M6 24h8l3-6h9l3 5h13v7H11.2A5.2 5.2 0 0 1 6 24.8V24z"/>
-          <circle cx="16" cy="33" r="2.5" fill="#F0CC4A"/>
-          <circle cx="35" cy="33" r="2.5" fill="#F0CC4A"/>
-          <path fill="#FFF8E4" stroke="#2A1810" stroke-width="1.15" d="M33 8.5c3.2 1.3 5.3 4.4 4.3 8-2.5-.6-4.5-2.7-5.3-5.2.4-1.1.8-2.1 1-2.8z"/>
-        </svg>
-        <span class="logo-words">
-          <span class="logo-kicker">Est. 1979</span>
-          <span class="logo-name">Banana's Garage</span>
-        </span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span class="burger" aria-hidden="true"><span></span><span></span><span></span></span>
-        <span class="nav-toggle-label">Menu</span>
+    <div class="bar">
+      <a class="logo" href="index.html">Banana's <em>Garage</em></a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
@@ -56,34 +41,45 @@
         <a href="about.html">About</a>
         <a href="parts.html">Parts</a>
         <a href="contact.html" aria-current="page">Contact</a>
+        <a href="https://www.instagram.com/79_sierragrande/" target="_blank" rel="noopener noreferrer">Instagram</a>
       </nav>
     </div>
   </header>
-  <main id="main" tabindex="-1">
+  <button type="button" class="nav-scrim" tabindex="-1" aria-label="Close menu" hidden></button>
+
+  <section class="page-hero banner-badge">
+    <picture>
+      <source type="image/webp" srcset="img/truck-badge-900.webp 900w, img/truck-badge-1206.webp 1206w" sizes="100vw">
+      <img src="img/truck-badge-900.jpg" srcset="img/truck-badge-900.jpg 900w, img/truck-badge-1206.jpg 1206w" sizes="100vw" width="1206" height="1735" alt="Sunset over the pale yellow fender and the Sierra Grande badge." decoding="async">
+    </picture>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="page-hero-copy">
+      <p class="kicker">Contact</p>
+      <h1>Say hello.</h1>
+      <p class="lede">Parts leads, squarebody stories, or a wave from another driveway.</p>
+    </div>
+  </section>
+
+  <main id="content">
     <div class="wrap">
-      <header class="page-hero">
-        <p class="kicker">Contact</p>
-        <h1>Say hello.</h1>
-        <p class="lede">Parts leads, squarebody stories, corrections, or a wave from another driveway. Email is the reliable one. Instagram is where the truck checks in between write-ups.</p>
-      </header>
-      <div class="contact-stack">
-        <a class="contact-card" href="mailto:bananasgarage79@gmail.com">
-          <span class="kicker">Email</span>
-          <span class="contact-value">bananasgarage79@gmail.com</span>
-        </a>
-        <a class="contact-card" href="https://www.instagram.com/79_sierragrande/" rel="noopener noreferrer">
-          <span class="kicker">Instagram</span>
-          <span class="contact-value">@79_sierragrande</span>
-        </a>
-      </div>
+      <section class="section">
+        <div class="contact-stack">
+          <a class="contact-card" href="mailto:bananasgarage79@gmail.com">
+            <span class="kicker">Email</span>
+            <strong>bananasgarage79@gmail.com</strong>
+          </a>
+          <a class="contact-card" href="https://www.instagram.com/79_sierragrande/" target="_blank" rel="noopener noreferrer">
+            <span class="kicker">Instagram</span>
+            <strong>Follow @79_sierragrande</strong>
+          </a>
+        </div>
+      </section>
     </div>
   </main>
+
   <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div>
-        <p class="footer-brand">Banana's Garage</p>
-        <p>DIY on a 1979 GMC Sierra Grande named Banana.</p>
-      </div>
+    <div class="footer-inner">
+      <p class="disclosure">DIY on a 1979 GMC Sierra Grande named Banana.</p>
       <nav class="footer-nav" aria-label="Footer">
         <a href="index.html">Home</a>
         <a href="builds.html">Builds</a>
@@ -91,11 +87,8 @@
         <a href="parts.html">Parts</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <div class="footer-contact">
-        <a href="mailto:bananasgarage79@gmail.com">bananasgarage79@gmail.com</a>
-        <a href="https://www.instagram.com/79_sierragrande/" rel="noopener noreferrer">Instagram @79_sierragrande</a>
-      </div>
-      <p class="legal">© 2026 Banana's Garage · <a href="https://www.instagram.com/79_sierragrande/" rel="noopener noreferrer">Instagram</a></p>
+      <p class="footer-follow"><a class="btn" href="https://www.instagram.com/79_sierragrande/" target="_blank" rel="noopener noreferrer">Follow @79_sierragrande</a></p>
+      <p class="footer-meta"><a href="mailto:bananasgarage79@gmail.com">bananasgarage79@gmail.com</a> · © 2026 Banana's Garage</p>
     </div>
   </footer>
   <script src="js/main.js" defer></script>
