@@ -374,9 +374,16 @@ p { margin: 0 0 0.9em; }
 .ig-card img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: center;
   background: #ddd4c6;
+}
+.ig-card time {
+  display: block;
+  margin: 0 0 6px;
+  font-size: 0.85rem;
+  color: var(--muted);
 }
 .ig-card div,
 .job { padding: 16px 18px 18px; }
