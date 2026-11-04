@@ -79,18 +79,19 @@
       </section>
 
       <section class="section" aria-labelledby="photos-title">
-        <div class="section-head">
-          <p class="kicker">Photos</p>
-          <h2 id="photos-title">On the truck</h2>
+        <div class="section-head photo-head">
+          <div>
+            <p class="kicker">Photos</p>
+            <h2 id="photos-title">Of the truck</h2>
+          </div>
+          <p class="scroll-hint">Scroll left!</p>
         </div>
         <!--
           Photo slot: add img/<name>-900.jpg, img/<name>-900.webp, and a larger
           width when the original is bigger than 900px. Copy a <figure> below
           only after those files exist. Do not leave an img pointing at a missing file.
         -->
-        <div class="photo-carousel">
-          <button type="button" class="carousel-btn carousel-prev" aria-label="Previous photos"><span aria-hidden="true">‹</span></button>
-          <div class="photo-strip" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Photos of Banana">
+        <div class="photo-strip" tabindex="0" role="region" aria-label="Photos of Banana">
             <figure>
               <picture>
                 <source type="image/webp" srcset="img/truck-front-900.webp 900w, img/truck-front-1223.webp 1223w" sizes="33vw">
@@ -147,8 +148,6 @@
               </picture>
               <figcaption>Hood up</figcaption>
             </figure>
-          </div>
-          <button type="button" class="carousel-btn carousel-next" aria-label="Next photos"><span aria-hidden="true">›</span></button>
         </div>
       </section>
 
