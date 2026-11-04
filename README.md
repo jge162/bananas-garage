@@ -28,6 +28,7 @@ Optimized files live in `img/` as JPG and WebP at about 900px wide, plus a large
 
 - `truck-front-900` and `truck-front-1223` (head-on; the camera original is 1223px wide). This stays the home hero.
 - `truck-side-900` and `truck-side-1800` (daylight side profile)
+- `truck-side-longbed-900` and `truck-side-longbed-1800` (longbed side by the wood gate)
 - `truck-side-dusk-900` and `truck-side-dusk-1800` (side profile at dusk)
 - `truck-street-three-quarter-900` and `truck-street-three-quarter-1800` (three-quarter view on the street)
 - `truck-garage-front-900` and `truck-garage-front-1800` (head-on from inside the garage)

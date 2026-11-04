@@ -67,8 +67,8 @@
     <div class="wrap">
       <section class="split">
         <picture>
-          <source type="image/webp" srcset="img/truck-side-900.webp 900w, img/truck-side-1800.webp 1800w" sizes="(max-width: 720px) 100vw, 56vw">
-          <img src="img/truck-side-900.jpg" srcset="img/truck-side-900.jpg 900w, img/truck-side-1800.jpg 1800w" sizes="(max-width: 720px) 100vw, 56vw" width="1800" height="1350" alt="Driver-side view of the two-tone yellow and white squarebody in a driveway." loading="lazy" decoding="async">
+          <source type="image/webp" srcset="img/truck-side-longbed-900.webp 900w, img/truck-side-longbed-1800.webp 1800w" sizes="(max-width: 720px) 100vw, 56vw">
+          <img class="meet-photo" src="img/truck-side-longbed-900.jpg" srcset="img/truck-side-longbed-900.jpg 900w, img/truck-side-longbed-1800.jpg 1800w" sizes="(max-width: 720px) 100vw, 56vw" width="1800" height="1350" alt="Driver-side profile of the longbed, pale yellow and white, parked by a wood gate under an overcast sky." loading="lazy" decoding="async">
         </picture>
         <div>
           <p class="kicker">The truck</p>
@@ -88,28 +88,67 @@
           width when the original is bigger than 900px. Copy a <figure> below
           only after those files exist. Do not leave an img pointing at a missing file.
         -->
-        <div class="photo-strip">
-          <figure>
-            <picture>
-              <source type="image/webp" srcset="img/truck-street-three-quarter-900.webp 900w, img/truck-street-three-quarter-1800.webp 1800w" sizes="33vw">
-              <img class="fit-street" src="img/truck-street-three-quarter-900.jpg" srcset="img/truck-street-three-quarter-900.jpg 900w, img/truck-street-three-quarter-1800.jpg 1800w" sizes="33vw" width="1800" height="2400" alt="Three-quarter view of Banana parked on a residential street." loading="lazy" decoding="async">
-            </picture>
-            <figcaption>On the street</figcaption>
-          </figure>
-          <figure>
-            <picture>
-              <source type="image/webp" srcset="img/truck-side-dusk-900.webp 900w, img/truck-side-dusk-1800.webp 1800w" sizes="33vw">
-              <img class="fit-dusk" src="img/truck-side-dusk-900.jpg" srcset="img/truck-side-dusk-900.jpg 900w, img/truck-side-dusk-1800.jpg 1800w" sizes="33vw" width="1800" height="1350" alt="Side profile of Banana in the driveway at dusk." loading="lazy" decoding="async">
-            </picture>
-            <figcaption>Dusk</figcaption>
-          </figure>
-          <figure>
-            <picture>
-              <source type="image/webp" srcset="img/truck-garage-front-900.webp 900w, img/truck-garage-front-1800.webp 1800w" sizes="33vw">
-              <img class="fit-garage" src="img/truck-garage-front-900.jpg" srcset="img/truck-garage-front-900.jpg 900w, img/truck-garage-front-1800.jpg 1800w" sizes="33vw" width="1800" height="2400" alt="Banana head-on in the driveway, seen from the garage." loading="lazy" decoding="async">
-            </picture>
-            <figcaption>From the garage</figcaption>
-          </figure>
+        <div class="photo-carousel">
+          <button type="button" class="carousel-btn carousel-prev" aria-label="Previous photos"><span aria-hidden="true">‹</span></button>
+          <div class="photo-strip" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Photos of Banana">
+            <figure>
+              <picture>
+                <source type="image/webp" srcset="img/truck-front-900.webp 900w, img/truck-front-1223.webp 1223w" sizes="33vw">
+                <img class="fit-front" src="img/truck-front-900.jpg" srcset="img/truck-front-900.jpg 900w, img/truck-front-1223.jpg 1223w" sizes="33vw" width="1223" height="1286" alt="Head-on view of Banana on a sunny residential street." loading="lazy" decoding="async">
+              </picture>
+              <figcaption>Front</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source type="image/webp" srcset="img/truck-side-900.webp 900w, img/truck-side-1800.webp 1800w" sizes="33vw">
+                <img class="fit-side" src="img/truck-side-900.jpg" srcset="img/truck-side-900.jpg 900w, img/truck-side-1800.jpg 1800w" sizes="33vw" width="1800" height="1350" alt="Daylight side profile of the two-tone truck in the driveway." loading="lazy" decoding="async">
+              </picture>
+              <figcaption>Side</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source type="image/webp" srcset="img/truck-side-longbed-900.webp 900w, img/truck-side-longbed-1800.webp 1800w" sizes="33vw">
+                <img src="img/truck-side-longbed-900.jpg" srcset="img/truck-side-longbed-900.jpg 900w, img/truck-side-longbed-1800.jpg 1800w" sizes="33vw" width="1800" height="1350" alt="Driver-side profile of the longbed beside a wood gate under an overcast sky." loading="lazy" decoding="async">
+              </picture>
+              <figcaption>Longbed</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source type="image/webp" srcset="img/truck-badge-900.webp 900w, img/truck-badge-1206.webp 1206w" sizes="33vw">
+                <img class="fit-badge" src="img/truck-badge-900.jpg" srcset="img/truck-badge-900.jpg 900w, img/truck-badge-1206.jpg 1206w" sizes="33vw" width="1206" height="1735" alt="Sunset over the pale yellow fender and the Sierra Grande badge." loading="lazy" decoding="async">
+              </picture>
+              <figcaption>Badge</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source type="image/webp" srcset="img/truck-street-three-quarter-900.webp 900w, img/truck-street-three-quarter-1800.webp 1800w" sizes="33vw">
+                <img class="fit-street" src="img/truck-street-three-quarter-900.jpg" srcset="img/truck-street-three-quarter-900.jpg 900w, img/truck-street-three-quarter-1800.jpg 1800w" sizes="33vw" width="1800" height="2400" alt="Three-quarter view of Banana parked on a residential street." loading="lazy" decoding="async">
+              </picture>
+              <figcaption>On the street</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source type="image/webp" srcset="img/truck-side-dusk-900.webp 900w, img/truck-side-dusk-1800.webp 1800w" sizes="33vw">
+                <img class="fit-dusk" src="img/truck-side-dusk-900.jpg" srcset="img/truck-side-dusk-900.jpg 900w, img/truck-side-dusk-1800.jpg 1800w" sizes="33vw" width="1800" height="1350" alt="Side profile of Banana in the driveway at dusk." loading="lazy" decoding="async">
+              </picture>
+              <figcaption>Dusk</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source type="image/webp" srcset="img/truck-garage-front-900.webp 900w, img/truck-garage-front-1800.webp 1800w" sizes="33vw">
+                <img class="fit-garage" src="img/truck-garage-front-900.jpg" srcset="img/truck-garage-front-900.jpg 900w, img/truck-garage-front-1800.jpg 1800w" sizes="33vw" width="1800" height="2400" alt="Banana head-on, seen from inside the garage." loading="lazy" decoding="async">
+              </picture>
+              <figcaption>From the garage</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source type="image/webp" srcset="img/truck-hood-open-900.webp 900w, img/truck-hood-open-1800.webp 1800w" sizes="33vw">
+                <img class="fit-hood" src="img/truck-hood-open-900.jpg" srcset="img/truck-hood-open-900.jpg 900w, img/truck-hood-open-1800.jpg 1800w" sizes="33vw" width="1800" height="1350" alt="Banana with the hood open on the street." loading="lazy" decoding="async">
+              </picture>
+              <figcaption>Hood up</figcaption>
+            </figure>
+          </div>
+          <button type="button" class="carousel-btn carousel-next" aria-label="Next photos"><span aria-hidden="true">›</span></button>
         </div>
       </section>
 
