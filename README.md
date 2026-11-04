@@ -5,7 +5,7 @@ DIY site for **Banana**, a 1979 GMC Sierra Grande in two-tone pale yellow and cr
 The site is plain static HTML, CSS, and a little vanilla JavaScript. There is no build step. Vercel can serve the repository root as-is. The layout follows the same clean system as [Gadget Drop Picks](https://gadget-drop-picks.vercel.app): Outfit and Fraunces, a light background, simple cards, and a dark header. Photos of the truck carry the pages.
 
 - **Domain:** https://bananasgarage.com
-- **Email:** [bananasgarage79@gmail.com](mailto:bananasgarage79@gmail.com)
+- **Email:** [info@bananasgarage.com](mailto:info@bananasgarage.com)
 - **Instagram:** https://www.instagram.com/79_sierragrande/
 
 ## Pages
