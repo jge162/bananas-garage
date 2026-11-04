@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 510" role="img" aria-labelledby="truck-title truck-desc">
+  <title id="truck-title">Banana</title>
+  <desc id="truck-desc">Side view of a boxy late-1970s pickup in pale yellow and cream, with a banana in the bed.</desc>
+  <ellipse cx="520" cy="468" rx="390" ry="16" fill="#2A1810" opacity="0.14"/>
+  <circle cx="168" cy="70" r="38" fill="#F4A261" stroke="#2A1810" stroke-width="5"/>
+  <circle cx="154" cy="56" r="12" fill="#FFE3A3"/>
+  <g id="wheels">
+    <g>
+      <circle cx="188" cy="390" r="62" fill="#1a1a1a"/>
+      <circle cx="188" cy="390" r="40" fill="#d5cec2" stroke="#2A1810" stroke-width="4"/>
+      <circle cx="188" cy="390" r="15" fill="#f7f3ea" stroke="#2A1810" stroke-width="4"/>
+      <circle cx="188" cy="390" r="4" fill="#2A1810"/>
+    </g>
+    <g>
+      <circle cx="800" cy="390" r="62" fill="#1a1a1a"/>
+      <circle cx="800" cy="390" r="40" fill="#d5cec2" stroke="#2A1810" stroke-width="4"/>
+      <circle cx="800" cy="390" r="15" fill="#f7f3ea" stroke="#2A1810" stroke-width="4"/>
+      <circle cx="800" cy="390" r="4" fill="#2A1810"/>
+    </g>
+  </g>
+  <defs>
+    <clipPath id="body-clip">
+      <path d="M78 206 L78 300 L36 314 L36 362 L90 374 L90 390 L118 390 A70 70 0 0 1 258 390 L730 390 A70 70 0 0 1 870 390 L990 390 L990 350 L1024 338 L1024 302 L990 290 L990 214 L512 214 L472 112 L288 112 L230 220 L104 220 L78 206 Z"/>
+    </clipPath>
+  </defs>
+  <path fill="#FBF4E0" d="M78 206 L78 300 L36 314 L36 362 L90 374 L90 390 L118 390 A70 70 0 0 1 258 390 L730 390 A70 70 0 0 1 870 390 L990 390 L990 350 L1024 338 L1024 302 L990 290 L990 214 L512 214 L472 112 L288 112 L230 220 L104 220 L78 206 Z"/>
+  <rect x="0" y="236" width="1060" height="180" fill="#F4D56E" clip-path="url(#body-clip)"/>
+  <g fill="#243044" stroke="#2A1810" stroke-width="4" stroke-linejoin="round">
+    <path d="M248 214 L292 132 L338 132 L312 214 Z"/>
+    <rect x="328" y="148" width="112" height="66" rx="4"/>
+    <path d="M452 150 H492 L508 206 H446 Z"/>
+  </g>
+  <path d="M300 156 L326 142 L326 168 Z" fill="#8eacc4" opacity="0.55"/>
+  <path d="M120 236 H960" stroke="#C85A2A" stroke-width="6" stroke-linecap="round"/>
+  <path d="M300 228 V372" stroke="#2A1810" stroke-width="4"/>
+  <path d="M455 222 V372" stroke="#2A1810" stroke-width="4"/>
+  <rect x="400" y="268" width="26" height="9" rx="2" fill="#e6e1d6" stroke="#2A1810" stroke-width="3"/>
+  <rect x="312" y="158" width="14" height="32" rx="2" fill="#e6e1d6" stroke="#2A1810" stroke-width="3"/>
+  <rect x="96" y="248" width="24" height="16" rx="2" fill="#f7f4c8" stroke="#2A1810" stroke-width="3"/>
+  <rect x="908" y="292" width="28" height="36" rx="3" fill="#e7c85a" stroke="#2A1810" stroke-width="4"/>
+  <circle cx="922" cy="306" r="3" fill="#2A1810"/>
+  <rect x="964" y="286" width="16" height="30" rx="2" fill="#C85A2A" stroke="#2A1810" stroke-width="3"/>
+  <path fill="none" stroke="#2A1810" stroke-width="6" stroke-linejoin="round" d="M78 206 L78 300 L36 314 L36 362 L90 374 L90 390 L118 390 A70 70 0 0 1 258 390 L730 390 A70 70 0 0 1 870 390 L990 390 L990 350 L1024 338 L1024 302 L990 290 L990 214 L512 214 L472 112 L288 112 L230 220 L104 220 L78 206 Z"/>
+  <rect x="28" y="306" width="72" height="54" rx="3" fill="#e6e1d6" stroke="#2A1810" stroke-width="5"/>
+  <path d="M38 332 H90" stroke="#c9c3b6" stroke-width="3"/>
+  <rect x="978" y="292" width="50" height="48" rx="3" fill="#e6e1d6" stroke="#2A1810" stroke-width="5"/>
+  <rect x="66" y="214" width="20" height="80" rx="2" fill="#24140e" stroke="#2A1810" stroke-width="3"/>
+  <g stroke="#F4D56E" stroke-width="2">
+    <path d="M70 226 H82"/>
+    <path d="M70 238 H82"/>
+    <path d="M70 250 H82"/>
+    <path d="M70 262 H82"/>
+    <path d="M70 274 H82"/>
+    <path d="M70 286 H82"/>
+  </g>
+  <g transform="translate(620 78)">
+    <path d="M24 132c2 8 28 22 62 8 8-18 4-48-12-74-16-22-36-28-46-14-6 16-8 52-4 80z" fill="#F6D34A" stroke="#2A1810" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M78 52c14-20 28-22 36-12" fill="none" stroke="#2F6A34" stroke-width="5" stroke-linecap="round"/>
+    <path d="M44 70c16 18 24 46 22 68" fill="none" stroke="#E2B43A" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
