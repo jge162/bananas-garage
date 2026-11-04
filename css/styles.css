@@ -351,6 +351,12 @@ p { margin: 0 0 0.9em; }
 .fit-front { object-position: center 42%; }
 .fit-side { object-position: center 60%; }
 .fit-badge { object-position: center 78%; }
+.fit-street { object-position: center 28%; }
+.fit-dusk { object-position: center 50%; }
+.fit-garage { object-position: center 30%; }
+.fit-hood { object-position: center 46%; }
+.banner-garage picture img { object-position: center 30%; }
+.banner-dusk picture img { object-position: center 48%; }
 
 .card-grid {
   display: grid;
@@ -502,10 +508,46 @@ p { margin: 0 0 0.9em; }
 @media (min-width: 1040px) {
   .card-grid.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
 }
+@media (max-width: 768px) {
+  .hero {
+    display: block;
+    min-height: 0;
+    color: var(--ink);
+    background: transparent;
+  }
+  .hero picture {
+    position: relative;
+    inset: auto;
+    z-index: auto;
+  }
+  .hero picture img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1223 / 1286;
+    object-fit: contain;
+    object-position: center center;
+  }
+  .hero .hero-shade { display: none; }
+  .hero-copy { padding: 22px 0 4px; }
+  .hero .kicker { color: var(--accent); }
+  .hero h1 {
+    color: var(--ink);
+    text-shadow: none;
+    max-width: none;
+  }
+  .hero .lede { color: var(--ink); }
+  .hero .btn-ghost {
+    color: var(--ink);
+    border-color: rgba(27, 22, 18, 0.45);
+  }
+  .hero .btn-ghost:hover {
+    background: rgba(27, 22, 18, 0.06);
+    color: var(--ink);
+  }
+}
 @media (max-width: 380px) {
   .bar { padding: 0 10px; }
   .logo { font-size: 0.98rem; }
-  .hero { min-height: 92vh; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }

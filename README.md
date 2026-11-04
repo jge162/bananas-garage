@@ -26,9 +26,13 @@ Instagram is linked, not embedded. Each card has a Reel or Post tag and a "View 
 
 Optimized files live in `img/` as JPG and WebP at about 900px wide, plus a larger width when the original is bigger:
 
-- `truck-front-900` and `truck-front-1223` (the camera original is 1223px wide)
-- `truck-side-900` and `truck-side-1800`
-- `truck-badge-900` and `truck-badge-1206`
+- `truck-front-900` and `truck-front-1223` (head-on; the camera original is 1223px wide). This stays the home hero.
+- `truck-side-900` and `truck-side-1800` (daylight side profile)
+- `truck-side-dusk-900` and `truck-side-dusk-1800` (side profile at dusk)
+- `truck-street-three-quarter-900` and `truck-street-three-quarter-1800` (three-quarter view on the street)
+- `truck-garage-front-900` and `truck-garage-front-1800` (head-on from inside the garage)
+- `truck-hood-open-900` and `truck-hood-open-1800` (hood up)
+- `truck-badge-900` and `truck-badge-1206` (sunset on the Sierra Grande badge)
 
 Use `<picture>` with a WebP `source` and a JPG `img`, plus `srcset` and `sizes`. The home hero is preloaded. Other photos use `loading="lazy"`.
 
