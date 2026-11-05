@@ -318,6 +318,14 @@ p { margin: 0 0 0.9em; }
   object-position: center;
 }
 .split p { color: var(--ink); }
+.split .meet-close {
+  margin-top: 0.35em;
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 560;
+  line-height: 1.35;
+}
+.split .meet-close em { font-style: normal; }
 .facts {
   display: grid;
   gap: 8px;
