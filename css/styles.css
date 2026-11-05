@@ -394,6 +394,11 @@ p { margin: 0 0 0.9em; }
 .fit-orange { object-position: center 34%; }
 .fit-carb { object-position: center 36%; }
 .fit-flowers { object-position: 38% center; }
+.fit-hood-street { object-position: 36% center; }
+.fit-stock-air { object-position: 46% center; }
+.fit-spacers { object-position: center 46%; }
+.fit-dash { object-position: 48% center; }
+.fit-transfer { object-position: 34% center; }
 .banner-garage picture img { object-position: center 30%; }
 .banner-dusk picture img { object-position: center 48%; }
 .banner-parts picture img { object-position: 34% 33%; }
