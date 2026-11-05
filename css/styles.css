@@ -236,6 +236,22 @@ p { margin: 0 0 0.9em; }
   margin: 1.7em 0 0.4em;
   font-size: clamp(1.6rem, 3vw, 2.15rem);
 }
+.owner-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 1.7em 0 0.45em;
+}
+.about-page .owner-head h2 { margin: 0; }
+.owner-head img {
+  width: 130px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  object-fit: cover;
+  flex: 0 0 auto;
+  background: #ddd4c6;
+}
 .specs {
   margin: 0.35em 0 0;
   background: var(--paper);
@@ -615,6 +631,8 @@ a.ig-card:hover { color: inherit; }
 @media (max-width: 560px) {
   .hero-actions { flex-direction: column; align-items: stretch; }
   .hero-actions .btn { width: 100%; }
+  .owner-head { gap: 12px; }
+  .owner-head img { width: 100px; border-radius: 14px; }
   .specs > div {
     grid-template-columns: 1fr;
     gap: 2px;
