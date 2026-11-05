@@ -225,6 +225,12 @@ p { margin: 0 0 0.9em; }
 }
 .hero { min-height: 90vh; }
 .page-hero { min-height: 62vh; }
+.about-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.about-page .page-hero { flex: 1 1 auto; }
 .hero picture,
 .page-hero picture {
   position: absolute;
@@ -287,8 +293,7 @@ p { margin: 0 0 0.9em; }
 .section-head { padding-bottom: 8px; }
 .section-head h1,
 .section-head h2,
-.split h2,
-.prose h2 {
+.split h2 {
   margin: 0 0 8px;
   font-size: clamp(1.8rem, 3vw, 2.5rem);
 }
@@ -326,27 +331,6 @@ p { margin: 0 0 0.9em; }
   line-height: 1.35;
 }
 .split .meet-close em { font-style: normal; }
-.facts {
-  display: grid;
-  gap: 8px;
-  margin: 18px 0 0;
-}
-.facts div {
-  display: grid;
-  grid-template-columns: 6.5rem 1fr;
-  gap: 10px;
-  padding-top: 8px;
-  border-top: 1px solid var(--line);
-}
-.facts dt {
-  margin: 0;
-  font-size: 0.75rem;
-  font-weight: 650;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.facts dd { margin: 0; }
 
 .photo-head {
   display: flex;
@@ -511,9 +495,6 @@ a.ig-card:hover { color: inherit; }
 .btn-ghost:hover { background: rgba(255, 255, 255, 0.12); color: #fff; }
 
 .prose-page { padding: 36px 0 12px; }
-.prose { width: min(720px, 100%); }
-.prose h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); margin: 0 0 12px; }
-.prose .kicker { margin-top: 0; }
 
 .contact-stack { display: grid; gap: 12px; max-width: 40rem; }
 .contact-card {
