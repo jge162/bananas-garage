@@ -415,8 +415,7 @@ p { margin: 0 0 0.9em; }
   display: grid;
   gap: 16px;
 }
-.ig-card,
-.job {
+.ig-card {
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 22px;
@@ -444,18 +443,13 @@ a.ig-card:hover { color: inherit; }
   font-size: 0.85rem;
   color: var(--muted);
 }
-.ig-card div,
-.job { padding: 16px 18px 18px; }
-.job { padding: 18px 18px 16px; }
-.ig-card h3,
-.job h2 {
+.ig-card div { padding: 16px 18px 18px; }
+.ig-card h3 {
   margin: 0 0 8px;
   font-size: 1.35rem;
 }
-.ig-card p,
-.job p { margin: 0; color: var(--muted); }
-.ig-card .kicker,
-.job .kicker { color: var(--accent); }
+.ig-card p { margin: 0; color: var(--muted); }
+.ig-card .kicker { color: var(--accent); }
 .text-link {
   display: inline-flex;
   align-items: center;
@@ -521,13 +515,6 @@ a.ig-card:hover { color: inherit; }
 .prose { width: min(720px, 100%); }
 .prose h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); margin: 0 0 12px; }
 .prose .kicker { margin-top: 0; }
-.jump {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 16px;
-  margin: 0 0 18px;
-}
-.jump a { font-weight: 650; min-height: 44px; display: inline-flex; align-items: center; }
 
 .contact-stack { display: grid; gap: 12px; max-width: 40rem; }
 .contact-card {
