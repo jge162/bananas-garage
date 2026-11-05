@@ -24,6 +24,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preload" href="fonts/outfit.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="img/engine-edelbrock-gray-900.webp" imagesrcset="img/engine-edelbrock-gray-900.webp 900w, img/engine-edelbrock-gray-1800.webp 1800w" imagesizes="100vw" type="image/webp">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -45,13 +46,21 @@
   </header>
   <button type="button" class="nav-scrim" tabindex="-1" aria-label="Close menu" hidden></button>
 
+  <section class="page-hero banner-parts">
+    <picture>
+      <source type="image/webp" srcset="img/engine-edelbrock-gray-900.webp 900w, img/engine-edelbrock-gray-1800.webp 1800w" sizes="100vw">
+      <img src="img/engine-edelbrock-gray-900.jpg" srcset="img/engine-edelbrock-gray-900.jpg 900w, img/engine-edelbrock-gray-1800.jpg 1800w" sizes="100vw" width="1800" height="1685" alt="Engine bay with black finned valve covers and a black Edelbrock air cleaner." decoding="async">
+    </picture>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="page-hero-copy">
+      <p class="kicker">Coming soon</p>
+      <h1>Parts &amp; tools I use</h1>
+      <p class="lede">This page will list the parts and tools that actually get used on Banana, with links when they're ready. Nothing is for sale here yet. When a link shows up, it will be something that has been on this truck or in this garage.</p>
+    </div>
+  </section>
+
   <main id="content" class="prose-page">
     <div class="wrap">
-      <div class="section-head">
-        <p class="kicker">Coming soon</p>
-        <h1>Parts &amp; tools I use</h1>
-        <p>This page will list the parts and tools that actually get used on Banana, with links when they're ready. Nothing is for sale here yet. When a link shows up, it will be something that has been on this truck or in this garage.</p>
-      </div>
       <ul class="part-list">
         <li class="part-card" id="hand-tools">
           <h2>Hand tools</h2>

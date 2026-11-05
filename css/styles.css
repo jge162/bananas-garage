@@ -390,8 +390,13 @@ p { margin: 0 0 0.9em; }
 .fit-dusk { object-position: center 50%; }
 .fit-garage { object-position: center 30%; }
 .fit-hood { object-position: center 46%; }
+.fit-edelbrock { object-position: 42% 48%; }
+.fit-orange { object-position: center 34%; }
+.fit-carb { object-position: center 36%; }
+.fit-flowers { object-position: 38% center; }
 .banner-garage picture img { object-position: center 30%; }
 .banner-dusk picture img { object-position: center 48%; }
+.banner-parts picture img { object-position: 34% 33%; }
 
 .card-grid {
   display: grid;
