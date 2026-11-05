@@ -458,7 +458,6 @@ a.ig-card:hover { color: inherit; }
   font-weight: 650;
   color: var(--accent-dark);
 }
-.more-link { margin: 8px 0 0; }
 
 .part-list {
   display: grid;
