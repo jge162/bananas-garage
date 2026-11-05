@@ -1,6 +1,6 @@
 # Banana's Garage
 
-DIY site for **Banana**, a 1979 GMC Sierra Grande in two-tone pale yellow and cream. The truck belongs to a squarebody enthusiast, electrical engineer, and family man. Day-to-day photos live on Instagram at [@79_sierragrande](https://www.instagram.com/79_sierragrande/).
+DIY site for **Banana**, a 1979 GMC Sierra Grande in two-tone pale yellow and cream. The truck belongs to a squarebody enthusiast, engineer, and family man. Day-to-day photos live on Instagram at [@79_sierragrande](https://www.instagram.com/79_sierragrande/).
 
 The site is plain static HTML, CSS, and a little vanilla JavaScript. There is no build step. Vercel can serve the repository root as-is. The layout follows the same clean system as [Gadget Drop Picks](https://gadget-drop-picks.vercel.app): Outfit and Fraunces, a light background, simple cards, and a dark header. Photos of the truck carry the pages.
 
