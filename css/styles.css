@@ -332,6 +332,21 @@ p { margin: 0 0 0.9em; }
   margin: 0;
 }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 28px 0 40px;
+}
+.page-actions .btn-ghost {
+  color: var(--ink);
+  border-color: rgba(27, 22, 18, 0.45);
+}
+.page-actions .btn-ghost:hover {
+  background: rgba(27, 22, 18, 0.06);
+  color: var(--ink);
+}
 
 .wrap {
   width: min(var(--wrap), calc(100% - 32px));
@@ -647,8 +662,10 @@ a.ig-card:hover { color: inherit; }
   }
 }
 @media (max-width: 560px) {
-  .hero-actions { flex-direction: column; align-items: stretch; }
-  .hero-actions .btn { width: 100%; }
+  .hero-actions,
+  .page-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn,
+  .page-actions .btn { width: 100%; }
   .owner-head { gap: 12px; }
   .owner-head img { width: 100px; border-radius: 14px; }
   .specs > div {
@@ -687,7 +704,7 @@ a.ig-card:hover { color: inherit; }
     object-position: center center;
   }
   .hero .hero-shade { display: none; }
-  .hero-copy { padding: 22px 0 4px; }
+  .hero-copy { padding: 22px 0 22px; }
   .hero .kicker { color: var(--accent); }
   .hero h1 {
     color: var(--ink);
