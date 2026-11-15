@@ -800,15 +800,68 @@ html.lightbox-open body { overflow: hidden; }
   .lightbox::backdrop { animation: none; }
 }
 
-/* Desktop: show the whole top photo, with a soft blurred fill behind it */
+/* Desktop: framed full photo, no crop or blur; title sits below */
 @media (min-width: 769px) {
   .hero,
-  .page-hero { background: #16130f var(--hero-bg) center / cover no-repeat; }
+  .page-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 0;
+    overflow: visible;
+    color: var(--ink);
+    background: var(--bg);
+    isolation: auto;
+  }
+  .hero picture,
+  .page-hero picture {
+    position: relative;
+    inset: auto;
+    z-index: auto;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    max-width: min(1160px, calc(100% - 48px));
+    margin: 28px auto 0;
+    background: none;
+    overflow: visible;
+  }
   .hero picture img,
-  .page-hero picture img { object-fit: contain; object-position: center center; }
-  .hero { --hero-bg: url("../img/bg-truck-front.jpg"); }
-  .banner-dusk { --hero-bg: url("../img/bg-truck-side-dusk.jpg"); }
-  .banner-parts { --hero-bg: url("../img/bg-engine-edelbrock.jpg"); }
-  .banner-rear { --hero-bg: url("../img/bg-truck-rear-street.jpg"); }
-  .banner-garage { --hero-bg: url("../img/bg-truck-garage-front.jpg"); }
+  .page-hero picture img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: min(1160px, calc(100% - 48px));
+    max-height: 72vh;
+    object-fit: contain;
+    object-position: center center;
+    border-radius: 16px;
+    box-shadow: 0 18px 40px rgba(48, 32, 16, 0.16);
+  }
+  .hero .hero-shade,
+  .page-hero .hero-shade { display: none; }
+  .hero-copy,
+  .page-hero-copy {
+    width: min(var(--wrap), calc(100% - 48px));
+    margin: 0 auto;
+    padding: 22px 0 36px;
+    text-align: center;
+  }
+  .hero .kicker,
+  .page-hero .kicker { color: var(--accent); }
+  .hero h1,
+  .page-hero h1 {
+    color: var(--ink);
+    text-shadow: none;
+    max-width: 16ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero .lede,
+  .page-hero .lede {
+    color: var(--muted);
+    max-width: 36em;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
