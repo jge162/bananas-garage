@@ -799,3 +799,16 @@ html.lightbox-open body { overflow: hidden; }
   .lightbox,
   .lightbox::backdrop { animation: none; }
 }
+
+/* Desktop: show the whole top photo, with a soft blurred fill behind it */
+@media (min-width: 769px) {
+  .hero,
+  .page-hero { background: #16130f var(--hero-bg) center / cover no-repeat; }
+  .hero picture img,
+  .page-hero picture img { object-fit: contain; object-position: center center; }
+  .hero { --hero-bg: url("../img/bg-truck-front.jpg"); }
+  .banner-dusk { --hero-bg: url("../img/bg-truck-side-dusk.jpg"); }
+  .banner-parts { --hero-bg: url("../img/bg-engine-edelbrock.jpg"); }
+  .banner-rear { --hero-bg: url("../img/bg-truck-rear-street.jpg"); }
+  .banner-garage { --hero-bg: url("../img/bg-truck-garage-front.jpg"); }
+}
